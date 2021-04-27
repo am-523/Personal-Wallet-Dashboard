@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C2A3256E-62C1-47B3-A6E2-FC53B1081E64}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Personal_Wallet_Dashboard</RootNamespace>
+    <AssemblyName>Personal Wallet Dashboard</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.1.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.1.4\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bank_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bank_cards_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bank_cards_120px.png1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card_payment_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chip_card_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data_transfer_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\data_transfer_120px.png1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_120px.png1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\important_mail_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insert_card_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mastercard_logo_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money_bag_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification_120px.png1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receipt_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\request_money_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_1068.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings_120px.png1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\split_transaction_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transfer_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_120px.png1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visa_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallet_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping_basket_120px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping_basket_120px.png1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_1069.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_1070.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_1071.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_1072.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

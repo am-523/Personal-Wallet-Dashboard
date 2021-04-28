@@ -36,7 +36,7 @@ Personal Wallet Dashboard UI C#
 
 
 ## Tutorial 📸
-- <a href="https://youtu.be/NReU89Npfns">
+- <a href="https://youtu.be/mcc0KFyB_Eg">
 			Youtube
 		</a> 
 
